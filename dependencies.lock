@@ -1,0 +1,17 @@
+dependencies:
+  idf:
+    source:
+      type: idf
+    version: 6.0.1
+  tny-robotics/mpu6050-esp-idf:
+    component_hash: bac7eeed9177d4d331c2f1b71b78e9c82b67b380221a06d8b3fd019a49806442
+    dependencies: []
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.0.0
+direct_dependencies:
+- tny-robotics/mpu6050-esp-idf
+manifest_hash: 655a67e68dba008a9710d384ca7df51215a66d3e2c4bb172fe117edc32f3b4cb
+target: esp32s3
+version: 3.0.0

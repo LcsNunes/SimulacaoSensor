@@ -1,0 +1,19 @@
+# ESP-IDF build artifacts
+/build/
+/managed_components/
+
+# ESP-IDF generated local configuration
+/sdkconfig.old
+
+# Wokwi local state
+/.wokwi/
+
+# VS Code local configuration
+/.vscode/settings.json
+/.vscode/tasks.json
+
+# OS/editor noise
+Thumbs.db
+.DS_Store
+*.tmp
+*.bak

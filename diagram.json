@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "author": "Lucas Porfirio",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-s3-devkitc-1",
+      "id": "esp",
+      "top": -8.4,
+      "left": -1.8,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-mpu6050",
+      "id": "imu1",
+      "top": 113.42,
+      "left": -330.88,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [
+      "esp:TX",
+      "$serialMonitor:RX",
+      "",
+      []
+    ],
+    [
+      "esp:RX",
+      "$serialMonitor:TX",
+      "",
+      []
+    ],
+    [
+      "imu1:VCC",
+      "esp:3V3.1",
+      "red",
+      [
+        "v-150",
+        "h340",
+        "*",
+        "h-20"
+      ]
+    ],
+    [
+      "imu1:GND",
+      "esp:GND.1",
+      "black",
+      [
+        "v150",
+        "h340",
+        "*",
+        "h-20"
+      ]
+    ],
+    [
+      "imu1:SDA",
+      "esp:8",
+      "blue",
+      [
+        "v20",
+        "h250",
+        "*",
+        "h-60"
+      ]
+    ],
+    [
+      "imu1:SCL",
+      "esp:9",
+      "yellow",
+      [
+        "v70",
+        "h220",
+        "*",
+        "h-100"
+      ]
+    ]
+  ],
+  "dependencies": {}
+}
